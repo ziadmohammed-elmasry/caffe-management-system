@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainPane" prefHeight="720.0" prefWidth="1030.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Controllers.Admin.DashBoardMainFormController">
+   <Text fill="#636e72" layoutX="55.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome Back">
+      <font>
+         <Font name="Roboto Medium" size="16.0" />
+      </font>
+   </Text>
+   <Text fx:id="txtUser" layoutX="55.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User">
+      <font>
+         <Font name="Roboto Medium" size="20.0" />
+      </font>
+   </Text>
+   <HBox layoutX="117.0" layoutY="194.0" prefHeight="100.0" prefWidth="200.0">
+      <children>
+         <Group>
+            <children>
+               <Rectangle arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="128.0" layoutX="11.0" layoutY="8.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="" width="250.0">
+                  <effect>
+                     <DropShadow blurType="GAUSSIAN" offsetX="-1.0" offsetY="2.0" spread="0.12">
+                        <color>
+                           <Color opacity="0.20000000298023224" />
+                        </color>
+                     </DropShadow>
+                  </effect>
+               </Rectangle>
+               <Text fx:id="txtSales" layoutX="87.0" layoutY="82.0" scaleX="0.6" scaleY="0.6" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs .10,000" wrappingWidth="174.90325927734375">
+                  <font>
+                     <Font size="25.0" />
+                  </font>
+               </Text>
+               <Text fill="#636e72" layoutX="50.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sales">
+                  <font>
+                     <Font name="Roboto Medium" size="16.0" />
+                  </font>
+               </Text>
+               <Group layoutX="72.0" layoutY="52.0">
+                  <children>
+                     <Circle fill="#55efc4" radius="25.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                     <ImageView fitHeight="34.0" fitWidth="36.0" layoutX="-17.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../../img/icons/salary.png" />
+                        </image>
+                     </ImageView>
+                  </children>
+               </Group>
+            </children>
+         </Group>
+         <Group>
+            <children>
+               <Rectangle arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="128.0" layoutX="11.0" layoutY="8.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="" width="250.0">
+                  <effect>
+                     <DropShadow blurType="GAUSSIAN" offsetX="-1.0" offsetY="2.0" spread="0.12">
+                        <color>
+                           <Color opacity="0.20000000298023224" />
+                        </color>
+                     </DropShadow>
+                  </effect>
+               </Rectangle>
+               <Text fx:id="txtOrders" layoutX="155.0" layoutY="82.0" scaleX="0.6" scaleY="0.6" strokeType="OUTSIDE" strokeWidth="0.0" text="10" wrappingWidth="47.9033203125">
+                  <font>
+                     <Font name="Roboto Medium" size="35.0" />
+                  </font>
+               </Text>
+               <Text fill="#636e72" layoutX="48.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Orders">
+                  <font>
+                     <Font name="Roboto Medium" size="16.0" />
+                  </font>
+               </Text>
+               <Group layoutX="72.0" layoutY="52.0">
+                  <children>
+                     <Circle fill="#74b9ff" radius="25.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                     <ImageView fitHeight="44.0" fitWidth="38.0" layoutX="-18.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../../img/icons/placOrder.png" />
+                        </image>
+                     </ImageView>
+                  </children>
+               </Group>
+            </children>
+         </Group>
+         <Group>
+            <children>
+               <Rectangle arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="128.0" layoutX="11.0" layoutY="8.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="" width="250.0">
+                  <effect>
+                     <DropShadow blurType="GAUSSIAN" offsetX="-1.0" offsetY="2.0" spread="0.12">
+                        <color>
+                           <Color opacity="0.20000000298023224" />
+                        </color>
+                     </DropShadow>
+                  </effect>
+               </Rectangle>
+               <Text fx:id="txtCustomers" layoutX="155.0" layoutY="82.0" scaleX="0.6" scaleY="0.6" strokeType="OUTSIDE" strokeWidth="0.0" text="10" wrappingWidth="47.9033203125">
+                  <font>
+                     <Font name="Roboto Medium" size="35.0" />
+                  </font>
+               </Text>
+               <Text fill="#636e72" layoutX="32.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customers">
+                  <font>
+                     <Font name="Roboto Medium" size="16.0" />
+                  </font>
+               </Text>
+               <Group layoutX="72.0" layoutY="52.0">
+                  <children>
+                     <Circle fill="#a29bfe" radius="25.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                     <ImageView fitHeight="34.0" fitWidth="36.0" layoutX="-17.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../../img/icons/staff.png" />
+                        </image>
+                     </ImageView>
+                  </children>
+               </Group>
+            </children>
+         </Group>
+      </children>
+   </HBox>
+   <Text fx:id="txtTime" layoutX="644.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="08:30 AM" textAlignment="RIGHT" wrappingWidth="299.13671875">
+      <font>
+         <Font size="45.0" />
+      </font>
+   </Text>
+   <Text fx:id="txtDate" layoutX="558.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="November 01,2023" textAlignment="RIGHT" wrappingWidth="389.13671875">
+      <font>
+         <Font size="35.0" />
+      </font>
+   </Text>
+   <PieChart fx:id="chartSales" layoutX="496.0" layoutY="316.0" legendVisible="false" prefHeight="381.0" prefWidth="486.0" stylesheets="@../../styles/PieChart.css" titleSide="BOTTOM" />
+   <AreaChart fx:id="chartInventory" alternativeRowFillVisible="false" createSymbols="false" horizontalGridLinesVisible="false" horizontalZeroLineVisible="false" layoutX="77.0" layoutY="344.0" legendVisible="false" prefHeight="327.0" prefWidth="466.0" verticalGridLinesVisible="false" verticalZeroLineVisible="false">
+      <xAxis>
+         <CategoryAxis side="BOTTOM" />
+      </xAxis>
+      <yAxis>
+         <NumberAxis side="LEFT" />
+      </yAxis>
+   </AreaChart>
+   <Text fill="#636e72" layoutX="668.0" layoutY="690.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Sales">
+      <font>
+         <Font name="Roboto Medium" size="22.0" />
+      </font>
+      <effect>
+         <DropShadow>
+            <color>
+               <Color opacity="0.2786259651184082" />
+            </color>
+         </DropShadow>
+      </effect>
+   </Text>
+   <Text fill="#636e72" layoutX="257.0" layoutY="690.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inventory">
+      <font>
+         <Font name="Roboto Medium" size="22.0" />
+      </font>
+      <effect>
+         <DropShadow>
+            <color>
+               <Color opacity="0.2786259651184082" />
+            </color>
+         </DropShadow>
+      </effect>
+   </Text>
+</AnchorPane>

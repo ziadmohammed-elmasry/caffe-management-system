@@ -1,0 +1,22 @@
+
+@import '../fonts/Fonts.css';
+
+
+/*******************************************************************************
+*                                                                              *
+* MaterialFX -Buttons                                                          *
+*                                                                              *
+*******************************************************************************/
+.mfx-button-Dashboard {
+    -fx-font-family: 'Roboto';
+    -fx-font-size: 18;
+    -fx-text-fill:  #FFFFFF;
+    -fx-background-color: transparent;
+}
+
+
+
+.mfx-active-button {
+    -fx-background-color: #1dd1a1; /* Blue color */
+
+}

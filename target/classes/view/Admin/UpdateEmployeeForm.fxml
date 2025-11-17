@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="587.0" prefWidth="475.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Controllers.Admin.UpdateEmployeeFormController">
+   <children>
+      <Text fill="#1dd1a1" layoutX="69.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Employee">
+         <font>
+            <Font name="Segoe UI Semibold" size="30.0" />
+         </font>
+      </Text>
+      <MFXButton fx:id="btnUpdateEmployee" buttonType="RAISED" depthLevel="LEVEL0" layoutX="69.0" layoutY="500.0" onAction="#btnUpdateEmployee" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #1dd1a1;" styleClass="mfx-button-Employee" stylesheets="@../../styles/MFXEmployee.css" text="Update Employee" />
+      <MFXButton fx:id="btnCancel" buttonType="RAISED" depthLevel="LEVEL1" layoutX="245.0" layoutY="500.0" onAction="#btnCancelOnAction" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #2d3436;" styleClass="mfx-button-Cancel" stylesheets="@../../styles/MFXEmployee.css" text="Cancel" />
+      <Text fill="#636e72" layoutX="69.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name">
+         <font>
+            <Font name="Roboto Medium" size="22.0" />
+         </font>
+      </Text>
+      <MFXTextField fx:id="txtFirstName" floatMode="DISABLED" layoutX="230.0" layoutY="152.0" prefHeight="45.0" prefWidth="197.0" styleClass="mfx-text-field" stylesheets="@../../styles/MFXProcessing.css" />
+      <VBox layoutX="69.0" layoutY="105.0" prefHeight="33.0" prefWidth="260.0" spacing="30.0">
+         <children>
+            <HBox prefHeight="16.0" prefWidth="259.0" spacing="60.0">
+               <children>
+                  <Text fill="#636e72" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee ID">
+                     <font>
+                        <Font name="Roboto Medium" size="22.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="txtEmployeeId" strokeType="OUTSIDE" strokeWidth="0.0" text="E001">
+                     <font>
+                        <Font name="Roboto Medium" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Text fill="#636e72" layoutX="69.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name">
+         <font>
+            <Font name="Roboto Medium" size="22.0" />
+         </font>
+      </Text>
+      <MFXTextField fx:id="txtLastName" floatMode="DISABLED" layoutX="230.0" layoutY="216.0" prefHeight="45.0" prefWidth="197.0" styleClass="mfx-text-field" stylesheets="@../../styles/MFXProcessing.css" />
+      <Text fill="#636e72" layoutX="69.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name">
+         <font>
+            <Font name="Roboto Medium" size="22.0" />
+         </font>
+      </Text>
+      <MFXTextField fx:id="txtUserName" floatMode="DISABLED" layoutX="230.0" layoutY="282.0" prefHeight="45.0" prefWidth="197.0" styleClass="mfx-text-field" stylesheets="@../../styles/MFXProcessing.css" />
+      <Text fill="#636e72" layoutX="69.0" layoutY="441.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile No">
+         <font>
+            <Font name="Roboto Medium" size="22.0" />
+         </font>
+      </Text>
+      <MFXTextField fx:id="txtMobileNo" floatMode="DISABLED" layoutX="230.0" layoutY="409.0" prefHeight="49.0" prefWidth="197.0" styleClass="mfx-text-field" stylesheets="@../../styles/MFXProcessing.css" />
+      <Text fill="#636e72" layoutX="69.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font name="Roboto Medium" size="22.0" />
+         </font>
+      </Text>
+      <MFXTextField fx:id="txtPassword" floatMode="DISABLED" layoutX="230.0" layoutY="345.0" prefHeight="45.0" prefWidth="197.0" styleClass="mfx-text-field" stylesheets="@../../styles/MFXProcessing.css" />
+   </children>
+</AnchorPane>

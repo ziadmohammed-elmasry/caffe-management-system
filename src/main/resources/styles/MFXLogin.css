@@ -1,0 +1,48 @@
+
+@import '../fonts/Fonts.css';
+
+/*******************************************************************************
+*                                                                              *
+* MaterialFX -Text Fields                                                      *
+*                                                                              *
+*******************************************************************************/
+
+.mfx-text-field{
+    -mfx-main: #55efc4;
+    -fx-font-size: 15;
+    -fx-font-family: 'Visby Round CF Medium';
+}
+
+
+.mfx-text-field-error{
+    -mfx-main:  red;
+}
+
+.mfx-text-field:floating .floating-text{
+    -fx-text-fill: #636e72;
+    -fx-font-family: 'Visby Round CF Medium';
+
+}
+.mfx-text-field .floating-text {
+    -fx-font-size: 15;
+    -fx-text-fill: #636e72;
+    -fx-font-family: 'Visby Round CF Medium';
+}
+
+/*******************************************************************************
+*                                                                              *
+* MaterialFX -Buttons                                                          *
+*                                                                              *
+*******************************************************************************/
+
+.mfx-button-login {
+    -fx-font-family: 'Roboto Bold';
+    -fx-font-size: 15;
+    -fx-text-fill: #FFFFFF;
+}
+
+.mfx-button-CreateAccount {
+    -fx-font-family: 'Roboto Bold';
+    -fx-font-size: 15;
+    -fx-text-fill:  #FFFFFF;
+}

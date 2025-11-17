@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="salesPane" prefHeight="720.0" prefWidth="1030.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Controllers.Admin.SalesFormController">
+   <Text fill="#636e72" layoutX="60.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sales">
+      <font>
+         <Font name="Roboto Medium" size="37.0" />
+      </font>
+      <effect>
+         <DropShadow>
+            <color>
+               <Color opacity="0.2786259651184082" />
+            </color>
+         </DropShadow>
+      </effect>
+   </Text>
+   <TableView fx:id="tableSales" layoutX="102.0" layoutY="165.0" prefHeight="450.0" prefWidth="826.0" stylesheets="@../../styles/TableStyle.css">
+      <columns>
+         <TableColumn fx:id="colSaleID" prefWidth="102.39997863769531" style="-fx-alignment: center;" text="Sale ID" />
+         <TableColumn fx:id="colCustomerName" prefWidth="267.199951171875" style="-fx-alignment: center;" text="Customer Name" />
+         <TableColumn fx:id="colContactNo" prefWidth="152.00003051757812" style="-fx-alignment: center;" text="Contact No." />
+         <TableColumn fx:id="colTotal" prefWidth="146.13336181640625" style="-fx-alignment: center;" text="Total" />
+         <TableColumn fx:id="colDate" prefWidth="155.46661376953125" style="-fx-alignment: center;" text="Date" />
+      </columns>
+      <columnResizePolicy>
+         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+      </columnResizePolicy>
+   </TableView>
+   <MFXTextField fx:id="txtSearch" floatMode="DISABLED" layoutX="710.0" layoutY="87.0" onAction="#txtSearchOnAction" prefHeight="43.0" prefWidth="150.0" styleClass="mfx-text-field" stylesheets="@../../styles/MFXProcessing.css" />
+   <Text fill="#636e72" layoutX="624.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search">
+      <font>
+         <Font name="Roboto Medium" size="22.0" />
+      </font>
+   </Text>
+</AnchorPane>

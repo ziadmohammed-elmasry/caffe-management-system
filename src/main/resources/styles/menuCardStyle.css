@@ -1,0 +1,42 @@
+/* src/main/resources/css/styles.css */
+.anchor-pane {
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: #f0f0f0;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px;
+   -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+
+}
+
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #1dd1a1;
+}
+
+.label#prod_name {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.label#prod_price {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #f39c12;
+
+}
+
+.button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-padding: 5px 10px;
+    -fx-border-radius: 5px;
+}
+
+.button:hover {
+    -fx-background-color: #45a049;
+}
+
+.spinner {
+    -fx-padding: 5px;
+}

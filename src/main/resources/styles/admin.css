@@ -1,0 +1,131 @@
+/* Main Content Area */
+.main-content {
+    -fx-background-color: #F5F5F5;
+    -fx-padding: 20px;
+}
+
+/* Dashboard Header */
+.dashboard-header {
+    -fx-padding: 20px;
+    -fx-background-color: #FFFFFF;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 5, 0, 0, 0);
+    -fx-background-radius: 10px;
+}
+
+.page-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2C3E50;
+}
+
+/* Sidebar Styles */
+.side-vBox {
+    -fx-background-color: #3E2723;
+}
+
+.brand-box {
+    -fx-padding: 10px 0;
+}
+
+.logo-label {
+    -fx-font-size: 20px;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+}
+
+/* Navigation Button Styles */
+.nav-buttons {
+    -fx-spacing: 5px;
+    -fx-padding: 20px 0;
+}
+
+.nav-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 15px;
+    -fx-min-width: 200px;
+    -fx-cursor: hand;
+    -fx-alignment: CENTER_LEFT;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+}
+
+.nav-button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-button:selected {
+    -fx-background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Logout Button */
+.logout-button {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 15px;
+    -fx-min-width: 200px;
+    -fx-cursor: hand;
+    -fx-background-radius: 5px;
+}
+
+.logout-button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Icon Buttons */
+.icon-button {
+    -fx-background-color: transparent;
+    -fx-font-size: 18px;
+    -fx-text-fill: #2C3E50;
+    -fx-cursor: hand;
+    -fx-padding: 5px 10px;
+}
+
+.icon-button:hover {
+    -fx-background-color: #E0E0E0;
+    -fx-background-radius: 5px;
+}
+
+/* Stat Cards */
+.stat-card {
+    -fx-background-color: #FFFFFF;
+    -fx-padding: 20px;
+    -fx-min-width: 200px;
+    -fx-min-height: 100px;
+    -fx-alignment: CENTER;
+    -fx-text-alignment: CENTER;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2C3E50;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 5, 0, 0, 0);
+    -fx-cursor: hand;
+}
+
+.stat-card:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0, 0, 0);
+    -fx-translate-y: -2px;
+}
+
+/* Section Titles */
+.section-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2C3E50;
+}
+
+/* Scroll Pane Styling */
+.dashboard-scroll {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+/* Table Styling */
+.orders-table, .items-table {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 5, 0, 0, 0);
+    -fx-padding: 10px;
+}

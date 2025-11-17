@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXFilterComboBox?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="inventoryPane" prefHeight="720.0" prefWidth="1030.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Controllers.Admin.InventoryFormController">
+   <Text fill="#636e72" layoutX="60.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inventory">
+      <font>
+         <Font name="Roboto Medium" size="37.0" />
+      </font>
+      <effect>
+         <DropShadow>
+            <color>
+               <Color opacity="0.2786259651184082" />
+            </color>
+         </DropShadow>
+      </effect>
+   </Text>
+   <TableView fx:id="tblProduct" layoutX="129.0" layoutY="156.0" prefHeight="294.0" prefWidth="735.0" stylesheets="@../../styles/TableStyle.css">
+      <columns>
+         <TableColumn fx:id="colProductId" prefWidth="97.0" style="-fx-alignment: center;" text="Product - ID" />
+         <TableColumn fx:id="colProductName" prefWidth="101.0" style="-fx-alignment: center;" text="Product Name" />
+         <TableColumn fx:id="colProductType" prefWidth="109.0" style="-fx-alignment: center;" text="Type" />
+         <TableColumn fx:id="colStock" prefWidth="99.0" style="-fx-alignment: center;" text="Stock" />
+         <TableColumn fx:id="colPrice" minWidth="0.0" prefWidth="106.4000244140625" style="-fx-alignment: center;" text="Price" />
+         <TableColumn fx:id="colUpdate" prefWidth="93.5999755859375" style="-fx-alignment: center;" text="Update" />
+         <TableColumn fx:id="colDelete" prefWidth="111.0" style="-fx-alignment: center;" text="Delete" />
+      </columns>
+   </TableView>
+   <MFXTextField fx:id="txtSearch" floatMode="DISABLED" layoutX="631.0" layoutY="97.0" onAction="#txtSearchOnAction" prefHeight="43.0" prefWidth="150.0" styleClass="mfx-text-field" stylesheets="@../../styles/MFXProcessing.css" />
+   <Text fill="#636e72" layoutX="545.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search">
+      <font>
+         <Font name="Roboto Medium" size="22.0" />
+      </font>
+   </Text>
+   <AnchorPane layoutX="84.0" layoutY="433.0" prefHeight="256.0" prefWidth="826.0" style="visibility: 5;" AnchorPane.bottomAnchor="31.0" AnchorPane.leftAnchor="84.0" AnchorPane.rightAnchor="120.0" AnchorPane.topAnchor="433.0">
+      <padding>
+         <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+      </padding>
+      <Label layoutX="23.0" layoutY="39.0" styleClass="mfx-text-field" stylesheets="@../../styles/MFXAddEmployee.css" text="Product ID" />
+      <Label layoutX="23.0" layoutY="80.0" styleClass="mfx-text-field" stylesheets="@../../styles/MFXAddSupplier.css" text="Product Name" />
+      <Label layoutX="290.0" layoutY="39.0" styleClass="mfx-text-field" stylesheets="@../../styles/MFXAddSupplier.css" text="Stock" />
+      <Label layoutX="292.0" layoutY="79.0" styleClass="mfx-text-field" stylesheets="@../../styles/MFXAddSupplier.css" text="Price" />
+      <TextField fx:id="txtProductName" layoutX="110.0" layoutY="70.0" prefHeight="26.0" prefWidth="145.0" styleClass="mfx-text-field" stylesheets="@../../styles/MFXProcessing.css" />
+      <TextField fx:id="txtProductID" layoutX="110.0" layoutY="30.0" prefHeight="18.0" prefWidth="145.0" styleClass="mfx-text-field" stylesheets="@../../styles/MFXProcessing.css" />
+      <TextField fx:id="txtStock" layoutX="370.0" layoutY="30.0" prefHeight="16.0" prefWidth="145.0" styleClass="mfx-text-field" stylesheets="@../../styles/MFXProcessing.css" />
+      <TextField fx:id="txtPrice" layoutX="370.0" layoutY="70.0" prefHeight="37.0" prefWidth="145.0" styleClass="mfx-text-field" stylesheets="@../../styles/MFXProcessing.css" />
+      <Label layoutX="23.0" layoutY="130.0" styleClass="mfx-text-field" stylesheets="@../../styles/MFXAddSupplier.css" text="Prduct Type" />
+      <MFXButton fx:id="btnAddImage" buttonType="RAISED" depthLevel="LEVEL3" layoutX="695.0" layoutY="159.0" onAction="#btnAddImageOnAction" prefHeight="34.0" prefWidth="104.0" style="-fx-background-color: #1dd1a1;" styleClass="mfx-button-Employee" stylesheets="@../../styles/MFXEmployee.css" text="Import">
+         <graphic>
+            <ImageView fx:id="btnImport" fitHeight="27.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/icons/add.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </MFXButton>
+      <MFXButton fx:id="btnProductUpdate" buttonType="RAISED" depthLevel="LEVEL3" layoutX="254.0" layoutY="189.0" onAction="#btnProductUpdateOnAction" prefHeight="34.0" prefWidth="104.0" style="-fx-background-color: #74b9ff;" styleClass="mfx-button-Employee" stylesheets="@../../styles/MFXEmployee.css" text="Update">
+         <graphic>
+            <ImageView fitHeight="27.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/icons/update.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </MFXButton>
+      <MFXButton fx:id="btnAddProduct" buttonType="RAISED" depthLevel="LEVEL3" layoutX="110.0" layoutY="189.0" onAction="#btnAddProductOnAction" prefHeight="34.0" prefWidth="104.0" style="-fx-background-color: #1dd1a1;" styleClass="mfx-button-Employee" stylesheets="@../../styles/MFXEmployee.css" text="Add">
+         <graphic>
+            <ImageView fitHeight="27.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/icons/add.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </MFXButton>
+      <ImageView fx:id="imgProduct" fitHeight="106.0" fitWidth="133.0" layoutX="681.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/icons/imageAdd.png" />
+         </image>
+      </ImageView>
+      <MFXFilterComboBox fx:id="cmbProductType" floatMode="DISABLED" layoutX="109.0" layoutY="115.0" onAction="#cmbProductTypeOnAction" prefHeight="45.0" prefWidth="160.0" styleClass="mfx-combo-box" stylesheets="@../../styles/MFXProcessing.css" />
+      <MFXButton fx:id="btnProductClear" buttonType="RAISED" depthLevel="LEVEL3" layoutX="391.0" layoutY="189.0" onAction="#btnProductClearOnAction" prefHeight="34.0" prefWidth="104.0" style="-fx-background-color: #ff7675;" styleClass="mfx-button-Employee" stylesheets="@../../styles/MFXEmployee.css" text="Clear">
+         <graphic>
+            <ImageView fitHeight="27.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/icons/remove.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </MFXButton>
+   </AnchorPane>
+</AnchorPane>

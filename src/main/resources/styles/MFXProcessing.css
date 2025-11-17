@@ -1,0 +1,85 @@
+
+@import '../fonts/Fonts.css';
+
+/*******************************************************************************
+*                                                                              *
+* MaterialFX -Text Fields                                                      *
+*                                                                              *
+*******************************************************************************/
+
+.mfx-text-field{
+    -mfx-main: #55efc4;
+    -fx-font-size: 16;
+    -fx-font-family: 'VarelaRound Regular';
+}
+
+.mfx-text-field-error{
+    -mfx-main: red;
+}
+
+
+
+/*******************************************************************************
+*                                                                              *
+* MaterialFX -Buttons                                                          *
+*                                                                              *
+*******************************************************************************/
+
+.mfx-button-Add {
+    -fx-font-family: 'Roboto Bold';
+    -fx-font-size: 15;
+    -fx-text-fill: #FFFFFF;
+}
+
+.mfx-button-Confirm {
+    -fx-font-family: 'Roboto Bold';
+    -fx-font-size: 15;
+    -fx-text-fill: #FFFFFF;
+}
+
+
+.mfx-button-Cancel {
+    -fx-font-family: 'Roboto Bold';
+    -fx-font-size: 15;
+    -fx-text-fill:  #FFFFFF;
+}
+
+
+/*******************************************************************************
+*                                                                              *
+* MaterialFX -ComboBox                                                         *
+*                                                                              *
+*******************************************************************************/
+
+
+
+
+.mfx-combo-box{
+    -mfx-main: #55efc4;
+    -fx-font-size: 16;
+}
+
+.mfx-combo-box-error{
+    -mfx-main: red;
+    -fx-font-size: 16;
+}
+
+/*******************************************************************************
+*                                                                              *
+* MaterialFX -Date Picker                                                       *
+*                                                                              *
+*******************************************************************************/
+
+.mfx-date-picker{
+    -mfx-main: #55efc4;
+}
+
+
+.mfx-date-picker:focus-within .icon {
+    -mfx-color: #55efc4;
+}
+
+
+.mfx-date-picker-error{
+    -mfx-main: #f80000;
+}
