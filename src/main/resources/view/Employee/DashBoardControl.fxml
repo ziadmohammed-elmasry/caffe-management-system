@@ -13,7 +13,7 @@
    <children>
       <AnchorPane prefHeight="720.0" prefWidth="250.0" style="-fx-background-color: #2d3436;">
          <children>
-            <Text fill="#1dd1a1" layoutX="64.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cafe">
+            <Text fill="#1dd1a1" layoutX="64.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="">
                <font>
                   <Font name="Roboto Medium" size="29.0" />
                </font>
@@ -134,7 +134,7 @@
                   <Insets />
                </opaqueInsets>
             </MFXButton>
-            <Text fill="WHITE" layoutX="138.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hifi">
+            <Text fill="WHITE" layoutX="138.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="caffeine coder">
                <font>
                   <Font name="Roboto Medium" size="29.0" />
                </font>

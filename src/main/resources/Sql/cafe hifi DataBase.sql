@@ -39,6 +39,7 @@ CREATE TABLE `admin` (
 
 INSERT INTO `admin` (`id`, `name`, `password`) VALUES
 (1, 'admin', '1234');
+(2, 'ziad','123456');
 
 -- --------------------------------------------------------
 

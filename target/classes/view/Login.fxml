@@ -25,7 +25,7 @@
                 <Image url="@../img/logo.png" />
             </ImageView>
             <!-- Optional Logo or Cafe Name -->
-            <Label prefHeight="40.0" prefWidth="125.0" styleClass="logo-label" text="Cafe Hifi">
+            <Label prefHeight="40.0" prefWidth="125.0" styleClass="logo-label" text="Caffeine coder">
                 <VBox.margin>
                     <Insets top="27.0" />
                 </VBox.margin>

@@ -1,6 +1,6 @@
-# Cafe Hifi Management System
+# Caffeine coder Management System
 
-The **Cafe Hifi Management System** is a comprehensive JavaFX application built to manage cafe operations efficiently. This project demonstrates key programming concepts, such as UI design with FXML, database integration using MySQL, and CRUD (Create, Read, Update, Delete) functionalities.
+The **Caffeine coder Management System** is a comprehensive JavaFX application built to manage cafe operations efficiently. This project demonstrates key programming concepts, such as UI design with FXML, database integration using MySQL, and CRUD (Create, Read, Update, Delete) functionalities.
 
 Whether you're managing employees or products, this system simplifies the process, offering a user-friendly interface and robust backend functionality.
 
